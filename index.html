@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container  p-4 mt-5 text-center">
+        <input id="result" type="text" placeholder="0">
+        <div class="row  mt-2 me-1 ms-2">
+            <button onclick="allClear()" class="operator-btn">AC</button>
+            <button onclick="deleteDigit()" class="operator-btn">DEL</button>
+            <button onclick="displayData('%')" class="operator-btn">%</button>
+            <button onclick="displayData('/')" class="operator-btn">/</button>
+        </div>
+    
+        <div class="row mt-2 me-1 ms-2">
+        <button onclick="displayData(7)">7</button>
+        <button onclick="displayData(8)" class="button">8</button>
+        <button onclick="displayData(9)" class="button">9</button>
+        <button onclick="displayData('*')" class="operator-btn">*</button>
+    </div>
+    <div class="row  mt-2 me-1 ms-2">
+        <button onclick="displayData(4)" class="button">4</button>
+        <button onclick="displayData(5)" class="button">5</button>
+        <button onclick="displayData(6)" class="button">6</button>
+        <button onclick="displayData('-')" class="operator-btn">-</button>
+    </div>
+    <div class="row  mt-2 me-1 ms-2">
+        <button onclick="displayData(1)" class="button">1</button>
+        <button onclick="displayData(2)" class="button">2</button>
+        <button onclick="displayData(3)" class="button">3</button>
+        <button  onclick="displayData('+')"class="operator-btn">+</button>
+    </div>
+    <div class="row  mt-2 me-1 ms-2">
+        <button onclick="displayData(0)" class="button">0</button>
+        <button onclick="displayData('.')" class="button">.</button>
+        <button onclick="displayData('**')" class="button">exp</button>
+        <button onclick="findOut()" class="operator-btn">=</button>
+    </div>
+
+    </div>
+</body>
+<script src="./calc.js"></script> 
+</html>
